@@ -13,7 +13,7 @@ const output = document.querySelector("#output");
 const nextBtn = document.querySelector("#next-btn");
 const checkBtn = document.querySelector("check-btn");
 
-const notes = document.querySelectorAll(".notes");
+const Notes = document.querySelectorAll(".notes");
 
 const notesArray = [2000, 500, 100, 20, 10, 5, 1 ];
 
@@ -71,7 +71,12 @@ checkBtn.addEventListener("click", () => {
     
 });
 
-
+// when check btn is clicked without refreshing the page, clear the no.of note values
+function clearNotes(){
+    for (let notes of Notes){
+        notes.innerText= "";
+    }
+}
 
 
 
