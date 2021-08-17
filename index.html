@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h1>Cash Register</h1>
+        <p>Enter the bill amount and cash given to know the minimun number of notes to return.</p>
+
+        <!-- this div is for bill amount input -->
+
+        <div>
+            <div class="label">Bill Amount:</div>
+            <input type="number" id="bill-amt">
+            <button id="next-btn">Next</button> 
+        </div>
+
+        <!-- this div is for cash given input -->
+
+        <div>
+            <div class="label">Cash Given:</div>
+            <input type="number" id="cash-amt">
+            <button id="check-btn">Check</button>
+        </div>
+
+        <!-- this div is for error message -->
+
+        <div class="error-msg"></div>
+
+        <!-- this div is for the change returned -->
+
+        <div class="change-returned">
+            
+            <div class="label">Return Change:</div>
+            
+            <!-- this div is for the output table -->
+            
+            <div id="output">
+                <table>
+
+                    <tr>
+                        <th>No.Of Notes</th>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                        <td class="notes"></td>
+                    </tr>
+
+
+                    <tr>
+                        <th>Note</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+
+                </table>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    
+    
+
+
+
+
+</body>
+</html>
