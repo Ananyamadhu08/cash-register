@@ -11,7 +11,7 @@ const cashReturnedDiv = document.querySelector(".change-returned");
 const output = document.querySelector("#output");
 
 const nextBtn = document.querySelector("#next-btn");
-const checkBtn = document.querySelector("check-btn");
+const checkBtn = document.querySelector("#check-btn");
 
 const Notes = document.querySelectorAll(".notes");
 
@@ -72,11 +72,48 @@ checkBtn.addEventListener("click", () => {
 });
 
 // when check btn is clicked without refreshing the page, clear the no.of note values
+
 function clearNotes(){
     for (let notes of Notes){
         notes.innerText= "";
     }
 }
+
+// to calculate no.of notes
+
+function calculateNotes(bill, cash){
+    let returnAmt = cash - bill;
+
+    if(returnAmt < 1){
+        errorShow("No amount to be returned");
+        return;
+    }
+
+    cashReturnedDiv.style.display= "block";
+
+    for(let i = 0; i < notesArray.length; i++){
+        returnAmt = compare(returnAmt, notesArray[i], i);
+    }
+}
+
+// compare with currencies and post the no.of notes on screen
+
+function compare( remainder, noteAmt, index){
+    if(remainder >= noteAmt){
+        let notes = Math.floor(remainder / noteAmt);
+
+        // console.log(notes)
+
+        remainder = remainder - notes * noteAmt;
+
+        Notes[index].innerText= `${notes}`;
+    }
+    
+    return remainder;
+}
+
+
+
 
 
 
