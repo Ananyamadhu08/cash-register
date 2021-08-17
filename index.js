@@ -40,6 +40,38 @@ function errorHide(){
     errorMsg.style.display= "none";
 }
 
+// check button click handler
+
+checkBtn.addEventListener("click", () => {
+    clearNotes(); //to do
+    errorHide();
+    // error handling 
+    let billAmtValue= Number(billAmt.value);
+    let cashAmtValue= Number(cashAmt.value);
+
+    if (billAmtValue > 0 && cashAmtValue){
+
+        if(!Number.isInteger(cashAmtValue)){
+            errorShow("Enter valid amount in cash given field");
+            return;
+        }
+
+        if(billAmtValue > cashAmtValue){
+            errorShow("Cash is less than bill amount, please enter right amount");
+            return;
+        }
+
+        //if input is valid calculate no.of notes
+
+        calculateNotes(billAmtValue, cashAmtValue);
+
+    } else {
+        errorShow("Enter valid bill amount and cash given to continue")
+    }
+    
+});
+
+
 
 
 
