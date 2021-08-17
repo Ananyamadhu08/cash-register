@@ -63,12 +63,12 @@ button{
     border-radius: 1rem;
 }
 
-.cash-amt{
+.cash-input{
     display: none;
 }
 
 .change-returned{
-    display: block;
+    display: none;
 }
 
 .error-msg{
