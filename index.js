@@ -117,6 +117,3 @@ function compare( remainder, noteAmt, index){
 
 
 
-
-
-
