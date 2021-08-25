@@ -1,104 +1,109 @@
-:root{
-    --dark-pink: #3e064e;
-    --light-pink: #e9a7f3;
+:root {
+  --dark-pink: #3e064e;
+  --light-pink: #e9a7f3;
+  --base-color: black;
 }
 
-*{
-    font-family: "Open Sans", sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    background-color: black;
+body {
+  margin: 0;
+  background-image: url("/images/cash-register-bg.gif");
 }
 
-#heading{
-    font-size: 2rem;
-    font-weight: bold;
+#heading {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-#heading-spn{
-    color:black;
-    font-weight: bold;
-    font-size: 2.5rem;
+#heading-spn {
+  color: var(--light-pink);
+  font-weight: bold;
+  font-size: 3.5rem;
 }
 
-.section{
-    width: 100%;
-    max-width: 500px;
-    min-height: 200px;
-    margin: auto;
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: var(--dark-pink);
+.section {
+  width: 100%;
+  max-width: 500px;
+  min-height: 200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--base-color);
 }
 
-h1,p{
-    color: white;
+h1,
+p {
+  color: white;
 }
 
-.label{
-    font-size: 1.3rem;
-    padding: 1rem 0.5rem;
-    color: var(--light-pink);
+.label {
+  font-size: 1.3rem;
+  padding: 1rem 0.5rem;
+  color: var(--light-pink);
 }
 
-input{
-    width: 100%;
-    padding: 1rem;
-    height: 50px;
-    display: block;
-    border: 1px solid black;
+input {
+  width: 100%;
+  padding: 1rem;
+  height: 50px;
+  display: block;
+  border: 1px solid black;
 }
 
-button{
-    padding: 0.5rem 1.5rem;
-    display: block;
-    font-size: 1rem;
-    border: none;
-    margin: 1rem auto;
-    background-color: var(--light-pink);
-    color: var(--dark-pink);
-    font-weight: bold;
-    border-radius: 1rem;
+button {
+  padding: 0.7rem 1.5rem;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  margin: 1rem auto;
+  background-color: var(--dark-pink);
+  color: var(--light-pink);
+  font-weight: bold;
+  border-radius: 1rem;
 }
 
-.cash-input{
-    display: none;
+.cash-input {
+  display: none;
 }
 
-.change-returned{
-    display: none;
+.change-returned {
+  display: none;
 }
 
-.error-msg{
-    padding-top: 1rem;
-    color: white;
+.error-msg {
+  padding-top: 1rem;
+  color: white;
 }
 
-#output{
-    margin: 1rem 0rem;
+#output {
+  margin: 1rem 0rem;
 }
 
-#output table, th, td{
-    padding: 0.2rem;
-    color: var(--dark-pink);
-    background-color: var(--light-pink);
-    border: 2px solid black;
-    border-collapse: collapse;
+#output table,
+th,
+td {
+  padding: 0.2rem;
+  color: var(--dark-pink);
+  background-color: var(--light-pink);
+  border: 2px solid black;
+  border-collapse: collapse;
 }
 
-.notes{
-    background-color: white;
-    font-weight: bold;
+.notes {
+  background-color: white;
+  font-weight: bold;
 }
 
-table{
-    width: 100%;
-    table-layout: fixed;
+table {
+  width: 100%;
+  table-layout: fixed;
 }
 
-th,td{
-    word-wrap: break-word;
+th,
+td {
+  word-wrap: break-word;
 }
