@@ -15,14 +15,14 @@ body {
 }
 
 #heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 #heading-spn {
   color: var(--light-pink);
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 .section {
